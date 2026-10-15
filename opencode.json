@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "alexandra/qwen3.8-flash-next",
+  "provider": {
+    "alexandra": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Alexandra",
+      "options": {
+        "baseURL": "https://inference.alexandra.dk/v1",
+        "apiKey": "{env:ALEX_API_KEY}"
+      },
+      "models": {
+        "qwen3.8-flash-next": {
+          "name": "Qwen via Alexandra"
+        }
+      }
+    }
+  }
+}
