@@ -17,11 +17,3 @@ To prevent duplication and configuration drift across different AI agent framewo
    - Do not duplicate these rules or specifications. Treat `.claude/` files as the single source of truth.
 3. **Portal Search Skills:**
    - Job-portal search CLIs live under [.agents/skills/](.agents/skills/) in the portable Agent Skills format (with a `SKILL.md` per portal). Codex and Antigravity discover these automatically; the `/scrape` workflow in [.claude/skills/job-scraper/](.claude/skills/job-scraper/) orchestrates them.
-
-
-<!-- ai-job-search-opencode-adapter -->
-# AI Job Search with OpenCode
-
-Read CLAUDE.md at the start of each session as the canonical candidate profile and framework instructions. Read the skill and methodology files referenced by each workflow, including .claude/skills/ and .agents/skills/. Keep the original profile and tool paths unchanged. Update CLAUDE.md when onboarding changes the candidate profile.
-
-This session uses OpenCode with the selected model. Use OpenCode's available tools instead of assuming Claude tool names or permissions are supported. Read referenced drafter/reviewer role files. If a separate reviewer cannot be started, perform a labelled sequential review pass and do not describe it as independent agent review.
